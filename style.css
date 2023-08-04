@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap");
+
+body {
+  margin: 40px auto 60px;
+  line-height: 1.4;
+  font-family: "Source Serif 4", serif;
+  color: #3f4062;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 46px;
+
+  display: flex;
+  justify-content: center;
+  background: -webkit-linear-gradient(#f04c23, #791d06);
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.my-task {
+  position: relative;
+}
+.my-task::after {
+  position: absolute;
+  content: "";
+  background-color: #f04c23;
+  top: 100%;
+  left: 0;
+  width: 80px;
+  height: 2px;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#0040ff, #00ffee);
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-bold {
+  font-weight: 700;
+}
+#moreBtn {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.more-button {
+  color: #f04c23;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  filter: brightness(90%);
+}
+
+.more-button:focus,
+.more-button:active {
+  outline: none !important;
+  background: none !important;
+}
+.more-button:active {
+  transform: translateY(2px);
+}
+
+.background {
+  background: linear-gradient(
+    to bottom,
+    rgb(217 239 241 / 50%),
+    rgb(224 231 181 / 40%)
+  );
+}
+
+button {
+  cursor: pointer;
+  font-family: "Source Serif 4", serif;
+  margin-right: 20px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: white;
+  color: rgb(21, 21, 22);
+  border: none;
+  box-shadow: 0 6px 25px 0px rgb(72 72 77 / 40%);
+  font-weight: 500;
+}
+
+button:hover {
+  box-shadow: 0 3px 25px 0px rgb(72 72 77 / 40%);
+  filter: brightness(120%);
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+input {
+  margin: 1rem 0;
+}
+
+.file-input {
+  display: inline-block;
+  text-align: left;
+  background: #fff;
+  padding: 16px;
+  width: 450px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.file-input > .button {
+  display: inline-block;
+  cursor: pointer;
+  background: #eee;
+  padding: 8px 16px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.file-input:hover > .button {
+  background: dodgerblue;
+  color: white;
+}
+
+.file-input > .label {
+  color: #333;
+  white-space: nowrap;
+  opacity: 0.3;
+}
+
+.icons-group {
+  padding: 20px 0 20px;
+}
+.icons-group span {
+  margin-right: 10px;
+}
+
+.icons-group i {
+  font-size: 20px;
+}
+
+.card {
+  max-width: 300px !important;
+}
+.card-content p {
+  margin: 0 !important;
+}
+
+.main-Category {
+  margin: 20px 0;
+}
+.text-title,
+.category-title,
+.list-title {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #aa4e4e;
+}
+
+.list-group {
+  border: none !important;
+}
+
+.main-Category ul li:not(:last-child),
+.list-group ul li:not(:last-child) {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-input {
+    width: 300px;
+  }
+}
